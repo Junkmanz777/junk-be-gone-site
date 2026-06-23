@@ -30,7 +30,7 @@ body {
   width: min(var(--logo-video-width), 70vw);
   max-width: 100%;
   height: auto;
-  max-height: 260px;
+  max-height: 390px;
   object-fit: contain;
   margin: 0 auto 18px;
 }
