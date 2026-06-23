@@ -18,7 +18,7 @@ body {
 }
 
 .logo-video {
-  width: min(520px, 92vw);
+  width: min(280px, 75vw);
   height: auto;
   margin-bottom: 20px;
 }
