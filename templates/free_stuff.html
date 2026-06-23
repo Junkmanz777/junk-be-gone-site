@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Stuff Requests | Junk Be Gone Clovis</title>
+  <meta name="description" content="Request useful items Junk Be Gone finds during pickups around Clovis, NM. Furniture, household goods, supplies, and more when available.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="page-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Free Stuff Requests</p>
+      <h1>Looking for something useful?</h1>
+      <p class="hero-text">
+        We are constantly picking up items around Clovis. If we find something that matches
+        your request and it still has life left in it, we will try to connect it with you.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#request-form">Fill Out Request</a>
+        <a class="btn secondary" href="/">Back to Main Site</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section blessing-intro">
+      <p class="eyebrow dark">Junk Be Gone Blessings</p>
+      <h2>Tell us what would help.</h2>
+      <p>
+        Need a couch, table, kids' items, hobby supplies, scrap material, or something else?
+        Send a request and we will keep it in mind during future pickups. There is no promise
+        that we will find a match, but if we can help, we will.
+      </p>
+      <p class="small-note">
+        Requests are for items only. For junk removal service, call
+        <a href="tel:5755300144">(575) 530-0144</a>.
+      </p>
+    </section>
+
+    <section id="request-form" class="section request-section">
+      <div>
+        <p class="eyebrow dark">Request Form</p>
+        <h2>What are you looking for?</h2>
+        <p>
+          Your request will be sent to junkbegonenm@gmail.com. Include as much detail as you can,
+          especially size, item type, and whether you can pick it up.
+        </p>
+      </div>
+
+      <form class="request-form" action="https://formsubmit.co/junkbegonenm@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Free Stuff Request from Junk Be Gone Clovis">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://www.junkbegoneclovis.com/free-stuff?sent=1">
+
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+
+        <label>
+          What are you hoping to find?
+          <textarea name="request" rows="6" placeholder="Example: couch, dresser, table, kids toys, wood scraps, craft supplies..." required></textarea>
+        </label>
+
+        <label>
+          How did you hear about us?
+          <select name="heard_from">
+            <option value="">Select one</option>
+            <option>Google</option>
+            <option>Facebook</option>
+            <option>TikTok</option>
+            <option>Friend or family</option>
+            <option>Past customer</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label class="checkbox-line">
+          <input type="checkbox" name="can_pick_up" value="Yes">
+          I can pick up items if something becomes available.
+        </label>
+
+        <button class="btn primary" type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Junk Be Gone. Junk removal in Clovis, NM and nearby areas.
+  </footer>
+</body>
+</html>
