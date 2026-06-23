@@ -1,3 +1,11 @@
+:root {
+  --logo-video-width: 240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,7 +17,7 @@ body {
   background: linear-gradient(135deg, #111827, #263238);
   color: white;
   text-align: center;
-  padding: 45px 20px 55px;
+  padding: 36px 20px 52px;
 }
 
 .hero-inner {
@@ -18,9 +26,13 @@ body {
 }
 
 .logo-video {
-  width: min(280px, 75vw);
+  display: block;
+  width: min(var(--logo-video-width), 70vw);
+  max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  max-height: 220px;
+  object-fit: contain;
+  margin: 0 auto 18px;
 }
 
 .eyebrow {
@@ -78,10 +90,10 @@ main {
 
 .section {
   background: white;
-  border-radius: 22px;
+  border-radius: 18px;
   padding: 32px;
   margin-bottom: 26px;
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 h2 {
@@ -98,7 +110,7 @@ h2 {
 .cards div {
   background: #f4f4f0;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 14px;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -119,121 +131,38 @@ h2 {
   color: #374151;
 }
 
-.service-map {
-  position: relative;
-  min-height: 360px;
-  border-radius: 24px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at center, rgba(250,204,21,.22), transparent 38%),
-    linear-gradient(135deg, #dbeafe, #f8fafc);
+.map-wrap {
+  min-width: 0;
+}
+
+#service-map {
+  width: 100%;
+  min-height: 390px;
   border: 2px solid #e5e7eb;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.7);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #e5e7eb;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .7);
 }
 
-.map-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(17,24,39,.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(17,24,39,.08) 1px, transparent 1px);
-  background-size: 42px 42px;
-}
-
-.radius-ring {
-  position: absolute;
-  width: 245px;
-  height: 245px;
-  border: 8px solid #facc15;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255,255,255,.55);
-  display: grid;
-  place-items: center;
+.map-caption {
+  margin: 10px 0 0;
+  color: #374151;
+  font-size: .95rem;
+  font-weight: bold;
   text-align: center;
 }
 
-.center-dot {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background: #111827;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.leaflet-container {
+  font-family: Arial, sans-serif;
 }
 
-.city-label {
-  position: absolute;
-  top: 92px;
-  font-size: 1.4rem;
-  font-weight: 900;
-  color: #111827;
+.why ul {
+  margin-bottom: 0;
 }
 
-.radius-label {
-  position: absolute;
-  bottom: 68px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #374151;
-}
-
-.town {
-  position: absolute;
-  background: white;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: .95rem;
-  box-shadow: 0 6px 14px rgba(0,0,0,.12);
-}
-
-.town-portales {
-  right: 44px;
-  bottom: 62px;
-}
-
-.town-texico {
-  left: 42px;
-  top: 92px;
-}
-
-.town-farwell {
-  left: 72px;
-  top: 145px;
-}
-
-.town-cannon {
-  right: 72px;
-  top: 86px;
-}
-
-@media (max-width: 750px) {
-  .service-area {
-    grid-template-columns: 1fr;
-  }
-
-  .service-map {
-    min-height: 330px;
-  }
-
-  .radius-ring {
-    width: 220px;
-    height: 220px;
-  }
-}
-
-.map-circle span {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.map-circle strong {
-  font-size: 1rem;
+.why li {
+  margin: 8px 0;
 }
 
 .final-cta {
@@ -249,11 +178,23 @@ footer {
 }
 
 @media (max-width: 750px) {
+  :root {
+    --logo-video-width: 190px;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+
   .service-area {
     grid-template-columns: 1fr;
   }
 
   .section {
     padding: 24px;
+  }
+
+  #service-map {
+    min-height: 330px;
   }
 }
