@@ -1,5 +1,5 @@
 :root {
-  --logo-video-width: 700px;
+  --logo-video-width: 310px;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
   width: min(var(--logo-video-width), 70vw);
   max-width: 100%;
   height: auto;
-  max-height: 520px;
+  max-height: 260px;
   object-fit: contain;
   margin: 0 auto 18px;
 }
@@ -289,6 +289,31 @@ h2 {
   box-shadow: 0 3px 14px rgba(0, 0, 0, .25);
 }
 
+.watch-section {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.watch-copy p {
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+
+.tiktok-wrap {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.tiktok-wrap .tiktok-embed {
+  margin: 0 !important;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .14);
+}
+
 .why ul {
   margin-bottom: 0;
 }
@@ -386,7 +411,7 @@ footer {
 
 @media (max-width: 750px) {
   :root {
-    --logo-video-width: 480px;
+    --logo-video-width: 240px;
   }
 
   .hero {
@@ -398,6 +423,7 @@ footer {
   }
 
   .free-stuff-preview,
+  .watch-section,
   .request-section {
     grid-template-columns: 1fr;
   }
@@ -416,3 +442,4 @@ footer {
     min-height: 330px;
   }
 }
+
