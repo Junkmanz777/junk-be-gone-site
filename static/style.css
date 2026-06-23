@@ -18,9 +18,10 @@ body {
 }
 
 .logo-video {
-  width: min(300px, 80vw);
+  width: min(520px, 92vw);
   height: auto;
-  }
+  margin-bottom: 20px;
+}
 
 .eyebrow {
   font-size: 1.25rem;
