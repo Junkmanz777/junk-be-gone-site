@@ -1,5 +1,5 @@
 :root {
-  --logo-video-width: 310px;
+  --logo-video-width: 500px;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
   width: min(var(--logo-video-width), 70vw);
   max-width: 100%;
   height: auto;
-  max-height: 260px;
+  max-height: 400px;
   object-fit: contain;
   margin: 0 auto 18px;
 }
@@ -411,7 +411,7 @@ footer {
 
 @media (max-width: 750px) {
   :root {
-    --logo-video-width: 240px;
+    --logo-video-width: 480px;
   }
 
   .hero {
