@@ -301,9 +301,40 @@ h2 {
   line-height: 1.55;
 }
 
+.video-showcase {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  min-width: 0;
+}
+
+.video-card {
+  width: 100%;
+  text-align: center;
+}
+
+.featured-video {
+  display: block;
+  width: min(100%, 420px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: #111827;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .14);
+}
+
+.video-caption {
+  margin: 10px 0 0;
+  color: #4b5563;
+  font-size: .95rem;
+  font-weight: bold;
+}
+
 .tiktok-wrap {
   display: flex;
   justify-content: center;
+  width: 100%;
   min-width: 0;
 }
 
