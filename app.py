@@ -5,7 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    featured_video_path = os.path.join(app.static_folder, "featured-junk-be-gone.mp4")
+    return render_template(
+        "index.html",
+        featured_video_exists=os.path.isfile(featured_video_path),
+    )
 
 @app.route("/free-stuff")
 def free_stuff():
