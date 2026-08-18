@@ -13,7 +13,6 @@
     <div class="hero-inner">
       <video class="logo-video" autoplay muted loop playsinline preload="metadata" aria-label="Junk Be Gone logo animation">
         <source src="/static/junk.webm" type="video/webm">
-        <source src="/static/junk.mp4" type="video/mp4">
       </video>
 
       <p class="eyebrow">Junk Removal in Clovis, New Mexico</p>
@@ -76,7 +75,6 @@
       </div>
 
       <div class="video-showcase">
-        {% if featured_video_exists %}
         <div class="video-card">
           <video class="featured-video" controls playsinline preload="metadata" aria-label="Junk Be Gone promotional video">
             <source src="/static/featured-junk-be-gone.mp4" type="video/mp4">
@@ -84,7 +82,6 @@
           </video>
           <p class="video-caption">One of our latest Junk Be Gone videos.</p>
         </div>
-        {% endif %}
 
         <div class="tiktok-wrap">
           <blockquote
