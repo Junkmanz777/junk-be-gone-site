@@ -5,3 +5,6 @@ services:
     buildCommand: ""
     startCommand: "python app.py"
     plan: free
+    domains:
+      - junkbegoneclovis.com
+      - junkbegonenm.com
