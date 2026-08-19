@@ -1,4 +1,4 @@
-# Junk Be Gone Clovis Website
+# Junk Be Gone Website
 
 Official website for **Junk Be Gone**, a local junk removal service based in Clovis, New Mexico.
 
@@ -9,7 +9,9 @@ The site includes information about junk removal services, service area, custome
 **Junk Be Gone**  
 Clovis, New Mexico  
 Phone: (575) 530-0144  
-Website: https://www.junkbegoneclovis.com
+Website: https://junkbegonenm.com
+
+`junkbegoneclovis.com` is retained as a legacy/local domain and redirects to `junkbegonenm.com`.
 
 ## Features
 
