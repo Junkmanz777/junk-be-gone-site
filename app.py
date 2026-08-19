@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request
+from flask import Flask, Response, redirect, render_template, request
 import os
 
 app = Flask(__name__)
@@ -32,6 +32,23 @@ def home():
 @app.route("/free-stuff")
 def free_stuff():
     return render_template("free_stuff.html")
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://junkbegonenm.com/</loc></url>
+  <url><loc>https://junkbegonenm.com/free-stuff</loc></url>
+</urlset>
+"""
+    return Response(xml, mimetype="application/xml")
+
+
+@app.route("/robots.txt")
+def robots():
+    text = "User-agent: *\nAllow: /\nSitemap: https://junkbegonenm.com/sitemap.xml\n"
+    return Response(text, mimetype="text/plain")
 
 
 if __name__ == "__main__":
